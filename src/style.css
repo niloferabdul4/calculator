@@ -1,0 +1,102 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right,azure,rgb(142, 183, 142),rgb(189, 189, 228))
+
+}
+.container{
+    
+    background-color: rgb(47, 45, 45);
+    margin:200px;
+    display:grid;
+    grid-template-columns: repeat(4,4rem);                    /** 4 columns each 4 times big than font size **/
+    grid-template-rows: minmax(5rem,auto) repeat(5,4rem);     /** first row adjust *** & then repeat 5 rows  ****/
+    box-shadow: rgba(28, 25, 25, 0.15) 1.95px 1.95px 2.6px;   
+    padding:10px;
+  border-radius: 20px;
+    
+}
+
+
+
+.container > button
+{
+    outline: none;                   
+    cursor: pointer;
+    border: 1px solid rgb(174, 168, 174);
+    border-radius: 2px;
+    
+}
+
+
+
+.container > button:hover{
+    background-color: rgb(229, 219, 219);
+
+}
+
+.operator{
+    font-weight: 400;
+    font-size: 22px;
+    font-style:normal;
+    background-color: rgb(201, 193, 193);
+}
+
+
+.output_container
+{
+    
+    grid-column: 1 / -1;              
+    background-color:rgb(242, 238, 242);
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    color: black;
+    padding: 10px;
+    word-wrap: break-word;           /* ****  break & wrap on next line   ****/
+    word-break: break-all;           /*** brek words at any char  ***/
+    margin:2px;
+    
+    
+}
+
+.output_container > input{
+    height:100%;
+    width:100%;
+    text-align: right;
+    text-indent: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 22px;
+    padding:10px;
+    font-family: 'Roboto';
+}
+
+
+.num{
+    
+    right:10px;
+    font-size: 18px;
+    
+}
+
+
+.span_two
+{
+    grid-column: span 2;             /****  span 2 columns  ***/
+}
+
